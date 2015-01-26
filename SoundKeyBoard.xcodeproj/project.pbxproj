@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		096D39011A76B17800239468 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D39001A76B17800239468 /* AppDelegate.swift */; };
+		096D39031A76B17800239468 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D39021A76B17800239468 /* ViewController.swift */; };
+		096D39061A76B17800239468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096D39041A76B17800239468 /* Main.storyboard */; };
+		096D39081A76B17800239468 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096D39071A76B17800239468 /* Images.xcassets */; };
+		096D390B1A76B17800239468 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096D39091A76B17800239468 /* LaunchScreen.xib */; };
+		096D39171A76B17800239468 /* SoundKeyBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D39161A76B17800239468 /* SoundKeyBoardTests.swift */; };
+		096D39291A76B18C00239468 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096D39281A76B18C00239468 /* KeyboardViewController.swift */; };
+		096D392C1A76B18C00239468 /* SoundKeys.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 096D39241A76B18B00239468 /* SoundKeys.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		096D39321A76B28200239468 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 096D39311A76B28200239468 /* KeyboardView.xib */; };
+		096D39341A76B2BE00239468 /* drumroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 096D39331A76B2BE00239468 /* drumroll.wav */; };
+		096D39351A76B2BE00239468 /* drumroll.wav in Resources */ = {isa = PBXBuildFile; fileRef = 096D39331A76B2BE00239468 /* drumroll.wav */; };
+		096D39371A76B3B600239468 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 096D39361A76B3B600239468 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		096D39111A76B17800239468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096D38F31A76B17800239468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096D38FA1A76B17800239468;
+			remoteInfo = SoundKeyBoard;
+		};
+		096D392A1A76B18C00239468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 096D38F31A76B17800239468 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 096D39231A76B18B00239468;
+			remoteInfo = SoundKeys;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		096D39301A76B18C00239468 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				096D392C1A76B18C00239468 /* SoundKeys.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		096D38FB1A76B17800239468 /* SoundKeyBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundKeyBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		096D38FF1A76B17800239468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096D39001A76B17800239468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		096D39021A76B17800239468 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		096D39051A76B17800239468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		096D39071A76B17800239468 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		096D390A1A76B17800239468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		096D39101A76B17800239468 /* SoundKeyBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundKeyBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		096D39151A76B17800239468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096D39161A76B17800239468 /* SoundKeyBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundKeyBoardTests.swift; sourceTree = "<group>"; };
+		096D39241A76B18B00239468 /* SoundKeys.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SoundKeys.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		096D39271A76B18C00239468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		096D39281A76B18C00239468 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		096D39311A76B28200239468 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		096D39331A76B2BE00239468 /* drumroll.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = drumroll.wav; sourceTree = "<group>"; };
+		096D39361A76B3B600239468 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		096D38F81A76B17800239468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096D390D1A76B17800239468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096D39211A76B18B00239468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D39371A76B3B600239468 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		096D38F21A76B17800239468 = {
+			isa = PBXGroup;
+			children = (
+				096D39361A76B3B600239468 /* AudioToolbox.framework */,
+				096D38FD1A76B17800239468 /* SoundKeyBoard */,
+				096D39131A76B17800239468 /* SoundKeyBoardTests */,
+				096D39251A76B18B00239468 /* SoundKeys */,
+				096D38FC1A76B17800239468 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		096D38FC1A76B17800239468 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				096D38FB1A76B17800239468 /* SoundKeyBoard.app */,
+				096D39101A76B17800239468 /* SoundKeyBoardTests.xctest */,
+				096D39241A76B18B00239468 /* SoundKeys.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		096D38FD1A76B17800239468 /* SoundKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				096D39001A76B17800239468 /* AppDelegate.swift */,
+				096D39021A76B17800239468 /* ViewController.swift */,
+				096D39331A76B2BE00239468 /* drumroll.wav */,
+				096D39041A76B17800239468 /* Main.storyboard */,
+				096D39071A76B17800239468 /* Images.xcassets */,
+				096D39091A76B17800239468 /* LaunchScreen.xib */,
+				096D38FE1A76B17800239468 /* Supporting Files */,
+			);
+			path = SoundKeyBoard;
+			sourceTree = "<group>";
+		};
+		096D38FE1A76B17800239468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096D38FF1A76B17800239468 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096D39131A76B17800239468 /* SoundKeyBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				096D39161A76B17800239468 /* SoundKeyBoardTests.swift */,
+				096D39141A76B17800239468 /* Supporting Files */,
+			);
+			path = SoundKeyBoardTests;
+			sourceTree = "<group>";
+		};
+		096D39141A76B17800239468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096D39151A76B17800239468 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		096D39251A76B18B00239468 /* SoundKeys */ = {
+			isa = PBXGroup;
+			children = (
+				096D39311A76B28200239468 /* KeyboardView.xib */,
+				096D39281A76B18C00239468 /* KeyboardViewController.swift */,
+				096D39261A76B18C00239468 /* Supporting Files */,
+			);
+			path = SoundKeys;
+			sourceTree = "<group>";
+		};
+		096D39261A76B18C00239468 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				096D39271A76B18C00239468 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		096D38FA1A76B17800239468 /* SoundKeyBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096D391A1A76B17800239468 /* Build configuration list for PBXNativeTarget "SoundKeyBoard" */;
+			buildPhases = (
+				096D38F71A76B17800239468 /* Sources */,
+				096D38F81A76B17800239468 /* Frameworks */,
+				096D38F91A76B17800239468 /* Resources */,
+				096D39301A76B18C00239468 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				096D392B1A76B18C00239468 /* PBXTargetDependency */,
+			);
+			name = SoundKeyBoard;
+			productName = SoundKeyBoard;
+			productReference = 096D38FB1A76B17800239468 /* SoundKeyBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		096D390F1A76B17800239468 /* SoundKeyBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096D391D1A76B17800239468 /* Build configuration list for PBXNativeTarget "SoundKeyBoardTests" */;
+			buildPhases = (
+				096D390C1A76B17800239468 /* Sources */,
+				096D390D1A76B17800239468 /* Frameworks */,
+				096D390E1A76B17800239468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				096D39121A76B17800239468 /* PBXTargetDependency */,
+			);
+			name = SoundKeyBoardTests;
+			productName = SoundKeyBoardTests;
+			productReference = 096D39101A76B17800239468 /* SoundKeyBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		096D39231A76B18B00239468 /* SoundKeys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 096D392D1A76B18C00239468 /* Build configuration list for PBXNativeTarget "SoundKeys" */;
+			buildPhases = (
+				096D39201A76B18B00239468 /* Sources */,
+				096D39211A76B18B00239468 /* Frameworks */,
+				096D39221A76B18B00239468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundKeys;
+			productName = SoundKeys;
+			productReference = 096D39241A76B18B00239468 /* SoundKeys.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		096D38F31A76B17800239468 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Pioneer Mobile Applications";
+				TargetAttributes = {
+					096D38FA1A76B17800239468 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					096D390F1A76B17800239468 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 096D38FA1A76B17800239468;
+					};
+					096D39231A76B18B00239468 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 096D38F61A76B17800239468 /* Build configuration list for PBXProject "SoundKeyBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 096D38F21A76B17800239468;
+			productRefGroup = 096D38FC1A76B17800239468 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				096D38FA1A76B17800239468 /* SoundKeyBoard */,
+				096D390F1A76B17800239468 /* SoundKeyBoardTests */,
+				096D39231A76B18B00239468 /* SoundKeys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		096D38F91A76B17800239468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D39061A76B17800239468 /* Main.storyboard in Resources */,
+				096D39341A76B2BE00239468 /* drumroll.wav in Resources */,
+				096D390B1A76B17800239468 /* LaunchScreen.xib in Resources */,
+				096D39081A76B17800239468 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096D390E1A76B17800239468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096D39221A76B18B00239468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D39321A76B28200239468 /* KeyboardView.xib in Resources */,
+				096D39351A76B2BE00239468 /* drumroll.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		096D38F71A76B17800239468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D39031A76B17800239468 /* ViewController.swift in Sources */,
+				096D39011A76B17800239468 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096D390C1A76B17800239468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D39171A76B17800239468 /* SoundKeyBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		096D39201A76B18B00239468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				096D39291A76B18C00239468 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		096D39121A76B17800239468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096D38FA1A76B17800239468 /* SoundKeyBoard */;
+			targetProxy = 096D39111A76B17800239468 /* PBXContainerItemProxy */;
+		};
+		096D392B1A76B18C00239468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 096D39231A76B18B00239468 /* SoundKeys */;
+			targetProxy = 096D392A1A76B18C00239468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		096D39041A76B17800239468 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096D39051A76B17800239468 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		096D39091A76B17800239468 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				096D390A1A76B17800239468 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		096D39181A76B17800239468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		096D39191A76B17800239468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		096D391B1A76B17800239468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SoundKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		096D391C1A76B17800239468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = SoundKeyBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		096D391E1A76B17800239468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundKeyBoard.app/SoundKeyBoard";
+			};
+			name = Debug;
+		};
+		096D391F1A76B17800239468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundKeyBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SoundKeyBoard.app/SoundKeyBoard";
+			};
+			name = Release;
+		};
+		096D392E1A76B18C00239468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SoundKeys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		096D392F1A76B18C00239468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SoundKeys/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		096D38F61A76B17800239468 /* Build configuration list for PBXProject "SoundKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096D39181A76B17800239468 /* Debug */,
+				096D39191A76B17800239468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		096D391A1A76B17800239468 /* Build configuration list for PBXNativeTarget "SoundKeyBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096D391B1A76B17800239468 /* Debug */,
+				096D391C1A76B17800239468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		096D391D1A76B17800239468 /* Build configuration list for PBXNativeTarget "SoundKeyBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096D391E1A76B17800239468 /* Debug */,
+				096D391F1A76B17800239468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		096D392D1A76B18C00239468 /* Build configuration list for PBXNativeTarget "SoundKeys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				096D392E1A76B18C00239468 /* Debug */,
+				096D392F1A76B18C00239468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 096D38F31A76B17800239468 /* Project object */;
+}
